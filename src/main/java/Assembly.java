@@ -179,37 +179,46 @@ public class Assembly {
 
             //print a
             case "pta":
-                if (!directOut)
+                if (!directOut) {
                     printBuffer.add("a = " + state.a);
-                else
+                }
+                else {
                     System.out.println("a = " + state.a);
+                }
                 break;
 
             //print x
             case "ptx":
-                if (!directOut)
+                if (!directOut) {
                     printBuffer.add("x = " + state.x);
-                else
+                }
+                else {
                     System.out.println("x = " + state.x);
+                }
                 break;
 
             //print y
             case "pty":
-                if (!directOut)
+                if (!directOut) {
                     printBuffer.add("y = " + state.y);
-                else
+                }
+                else {
                     System.out.println("y = " + state.y);
+                }
                 break;
 
             //print the variables
             case "ptv":
-                if (!directOut)
+                if (!directOut) {
                     printBuffer.add("The list of variables contains " + state.variables.toString());
-                else
+                }
+                else {
                     System.out.println("The list of variables contains " + state.variables.toString());
+                }
                 break;
 
             //invalid opcodes do nothing
+            case "#":
             default:
                 break;
         }
