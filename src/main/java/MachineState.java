@@ -2,6 +2,7 @@ import java.util.HashMap;
 import java.util.Stack;
 
 //a simple way of storing a state for the assembly parser
+//all variables are doubles
 public class MachineState {
     public double x = 0;
     public double y = 0;
